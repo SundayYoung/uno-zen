@@ -11,10 +11,10 @@
         {{!> post-author}}
 
         <span class="post reading-time"> ~ <span></span> read.</span>
-      </div>
-      <a>
-        {{#if image}}<img id="post-image" src="{{image}}" alt="{{title}}">{{/if}}
-        <h1>{{title}}</h1>
+      </div>     
+      <a title="Tweet '{{title}}'" href="https://twitter.com/intent/tweet?text={{encode title}}{{encode ' »'}}&amp;hashtags={{tags separator="," autolink="false"}}&amp;url={{url absolute="true"}}">
+          {{#if image}}<img id="post-image" src="{{image}}" alt="{{title}}">{{/if}}
+          <h1 id="post-title">{{title}}</h1>
       </a>
     </header>
 
