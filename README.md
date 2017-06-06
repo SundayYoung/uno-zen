@@ -25,7 +25,7 @@
 * 快速集成 Disqus 评论管理系统
 * 修改中文版 ghost 下，文章天数计算错误的bug
 
-###你可以访问我的博客查看 [demo](https://bestswifter.com)
+###你可以访问我的博客查看 [demo](http://hiyoung.top)
 
 ## 安装
 
@@ -34,7 +34,7 @@
 进入 ghost 根目录下的 theme 文件夹(`path-to-ghost/content/themes`)，然后运行以下命令：
 
 ```bash
-git clone https://github.com/bestswifter/uno-zen.git
+git clone https://github.com/SundayYoung/uno-zen.git
 ```
 
 重启 ghost 服务，进入后台就可以看到 Uno-zen 这个主题了。
@@ -77,12 +77,12 @@ git pull origin
 采用 [Font Awesome](http://fontawesome.io/) 的图标字体来展示社交按钮，请参考我的 `partials/social.hbs` 文件中的代码：
 
 ```html
-<a href="https://github.com/bestswifter" title="@KtZhang 的 Github" target="_blank">
+<a href="https://github.com" title="@File Liu的 Github" target="_blank">
   <i class='social fa fa-github'></i>
   <span class="label">Github</span>
 </a>
 
-<a href="http://weibo.com/bestswifter" title="@bestswifter" target="_blank">
+<a href="http://weibo.com" title="@Felix Liu" target="_blank">
   <i class='social fa fa-weibo'></i>
   <span class="label">weibo</span>
 </a>
@@ -98,11 +98,11 @@ git pull origin
 
 ### 文章列表的总标题
 
-在[我的博客](https://bestswifter.com)中，你可以看到所有文章的最上方有一个大标题：**作品集**，如果你想换成别的名字，可以在 ghost 后台插入代码，在 `{{ghost_head}}` 中加入以下代码：
+在[我的博客](http://hiyoung.top)中，你可以看到所有文章的最上方有一个大标题：**作品集**，如果你想换成别的名字，可以在 ghost 后台插入代码，在 `{{ghost_head}}` 中加入以下代码：
 
 ```js
 <script>
-var posts_headline = '作品集 ';
+var posts_headline = 'posts list ';
 </script>
 ```
 
@@ -112,13 +112,13 @@ var posts_headline = '作品集 ';
 
 ```js
 <script>
-var disqus_shortname = 'bestswifter'; // 改成自己的 shortname
+var disqus_shortname = 'Felix Liu'; // 改成自己的 shortname
 </script>
 ```
 
 ### 时间统计
 
-所有的文章都会显示 “xxx Days Ago”，表示这是你多久以前的文章。原来的代码似乎与中文版ghost不兼容，我做了一些修改，具体效果可以参考[我的博客](https://bestswifter.com)。
+所有的文章都会显示 “xxx Days Ago”，表示这是你多久以前的文章。原来的代码似乎与中文版ghost不兼容，我做了一些修改，具体效果可以参考[我的博客](https://hiyoung.top)。
 
 ### 自定义导航页
 
@@ -130,4 +130,4 @@ uno-zen 是一个非常优秀的主题，作者还在不断的对他进行更新
 
 ## License
 
-MIT © [bestswifter](https://bestswifter.com)
+MIT © [Felix Liu](https://hiyoung.top)
